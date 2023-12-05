@@ -21,3 +21,12 @@ def visualize_freq(freq, fft):
     plt.ylabel('FFT Amplitude |X(freq)|')
     plt.xlim(0, 6400)
     plt.show()
+
+
+def visualize_order(freq, fft):
+    plt.figure(figsize=(12, 6))
+    plt.stem(freq, fft, 'b', markerfmt=" ", basefmt="-b")
+    plt.xlabel('Order')
+    plt.ylabel('FFT Amplitude |X(freq)|')
+    plt.xlim(0, 800)
+    plt.show()
